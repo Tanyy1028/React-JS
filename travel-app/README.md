@@ -73,6 +73,10 @@ Welcome to the **Ticket Booking App** 🎬 — A simple and interactive platform
 
 
 
+https://github.com/user-attachments/assets/64f47d46-e7f8-4f08-a122-0b40789e1980
+
+
+
 
 
 
