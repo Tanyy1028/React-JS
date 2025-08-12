@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+    background-image: url('images/i1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+}
+.hero-left {
+  flex: 1;
+  padding: 50px;
+}
+.hero-right {
+  flex: 1;
+}

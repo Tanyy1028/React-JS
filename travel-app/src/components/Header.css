@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  font-weight: bold;
+  color: #4a00e0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.sign-in {
+  background-color: white;
+  border: 1px solid #4a00e0;
+  color: #4a00e0;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
