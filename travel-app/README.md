@@ -36,6 +36,26 @@ Welcome to the **Ticket Booking App** 🎬 — A simple and interactive platform
 # Video
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## 🛠️ Installation & Setup
