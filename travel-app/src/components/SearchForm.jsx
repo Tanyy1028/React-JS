@@ -8,26 +8,23 @@ function SearchForm() {
   const [endDate, setEndDate] = useState("");
   const [adults, setAdults] = useState("0");
 
-  const [packages, setPackages] = useState([]); // store all searches
-  const [editIndex, setEditIndex] = useState(null); // track which package to edit
-
+  const [packages, setPackages] = useState([]); 
+  const [editIndex, setEditIndex] = useState(null); 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newPackage = { from, to, startDate, endDate, adults };
 
     if (editIndex !== null) {
-      // Update existing package
       const updated = [...packages];
       updated[editIndex] = newPackage;
       setPackages(updated);
       setEditIndex(null);
     } else {
-      // Add new package
+     
       setPackages([...packages, newPackage]);
     }
 
-    // Reset form
     setFrom("");
     setTo("");
     setStartDate("");
@@ -71,7 +68,6 @@ function SearchForm() {
         <button type="submit">{editIndex !== null ? "Update Ticket" : "Search Ticket"}</button>
       </form>
 
-      {/* Display Saved Packages */}
       <div className="package-list">
         <h3>Confirm Ticekt</h3>
         {packages.length === 0 && <p>No ticket found.</p>}

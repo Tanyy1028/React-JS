@@ -22,7 +22,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  transform: translateY(-4px); /* move upward */
+  transform: translateY(-4px); 
   color: orange;
 }
 
@@ -39,6 +39,6 @@ nav ul li:hover {
 .sign-in:hover {
   background-color: orange;
   color: white;
-  transform: translateY(-3px); /* small upward shift */
+  transform: translateY(-3px); 
 }
 
