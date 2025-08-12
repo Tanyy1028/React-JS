@@ -4,19 +4,41 @@
   align-items: center;
   padding: 20px;
 }
+
 .logo {
   font-weight: bold;
-  color: #4a00e0;
+  font-size: 30px;
 }
+
 nav ul {
-  list-style: none;
+  list-style: none; 
   display: flex;
   gap: 20px;
 }
+
+nav ul li {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: translateY(-4px); /* move upward */
+  color: orange;
+}
+
 .sign-in {
   background-color: white;
-  border: 1px solid #4a00e0;
-  color: #4a00e0;
+  border: 1px solid orange;
+  color: orange;
   padding: 6px 12px;
   border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.sign-in:hover {
+  background-color: orange;
+  color: white;
+  transform: translateY(-3px); /* small upward shift */
+}
+
