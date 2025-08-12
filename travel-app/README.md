@@ -1,12 +1,106 @@
-# React + Vite
+# 🎟️ Ticket Booking App (React JS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Ticket Booking App** 🎬 — A simple and interactive platform to book tickets for your favorite events, movies, or shows!  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎫 **Book Tickets** for events, movies, and concerts  
+- 🔍 **Search** events by name   
+- 🛒 **Cart System** to manage bookings before checkout  
+- 📱 **Responsive Design** — Works on mobile & desktop  
+- 💾 **Local Storage** to save booking history  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```
+
+📦 ticket-booking-app
+├── 📁 public
+│   └── index.html
+├── 📁 src
+│   ├── components
+│   │   ├── Header.jsx
+│   │   ├── HeroSection.jsx
+│   │   ├── SearchFrom.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.js
+│   └── data.js
+└── package.json
+
+````
+# Video
+
+
+---
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ticket-booking-app.git
+````
+
+2. **Navigate into the folder**
+
+   ```bash
+   cd ticket-booking-app
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   npm start
+   ```
+
+---
+
+## 🖥️ Tech Stack
+
+* ⚛ **React JS** — Frontend framework
+* 🎨 **CSS3** — Styling
+* 🔄 **React Router** — Navigation
+* 💾 **Local Storage** — Data persistence
+
+---
+
+## 📸 Screenshots
+
+| Home Page 🏠                  | Booking Page 🎫                     |
+| ----------------------------- | ----------------------------------- |
+| ![Home](screenshots/home.png) | ![Booking](screenshots/booking.png) |
+
+---
+
+## 📌 Future Improvements
+
+* 🌐 API Integration for live event data
+* 🔐 User authentication (Login/Signup)
+* 📧 Email confirmation after booking
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. 🍴 Fork the repo
+2. 🛠️ Create a new branch (`feature/your-feature`)
+3. 📤 Submit a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. 📝
+
