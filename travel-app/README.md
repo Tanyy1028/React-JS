@@ -32,31 +32,6 @@ Welcome to the **Ticket Booking App** 🎬 — A simple and interactive platform
 │   └── data.js
 └── package.json
 
-````
-# Video
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 
 ## 🛠️ Installation & Setup
 
@@ -94,11 +69,17 @@ Welcome to the **Ticket Booking App** 🎬 — A simple and interactive platform
 
 ---
 
-## 📸 Screenshots
+## 📸 Video
 
-| Home Page 🏠                  | Booking Page 🎫                     |
-| ----------------------------- | ----------------------------------- |
-| ![Home](screenshots/home.png) | ![Booking](screenshots/booking.png) |
+
+
+
+
+
+
+
+
+
 
 ---
 
