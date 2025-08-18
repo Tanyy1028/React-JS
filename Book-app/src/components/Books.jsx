@@ -1,20 +1,23 @@
-import { useState } from "react"; 
-import "./components/Book/Book.css";
+import { useState } from "react"; //
+import "./Books.css";
 
-export default function Books() { 
+
+
+export default function Books() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [index, setIndex] = useState(0);
 
-  // define state
-  const [books, setBooks] = useState([ 
+
+  const [books, setBooks] = useState([
     {
-      title: "How to Influence Friends and People",
-      author: "Dale Carnegie",
+      id: 1,
+      title: "The Great Gatsby", 
+      author: "F. Scott Fitzgerald",
     },
   ]);
 
-  const addBook = () => { 
+  const addBook = () => {
     const newBook = {
       title: title,
       author: author,
@@ -24,7 +27,7 @@ export default function Books() {
 
   function removeBook(index) {
     const temp = [...books];
-    temp.splice(index, 1); 
+    temp.splice(index, 1);
     setBooks(temp);
   }
 
@@ -62,7 +65,7 @@ export default function Books() {
       </button>
 
       {books.map((book, i) => (
-        <div>
+        <div key={i}>
           <p>
             {book.title} - {book.author}
             <button onClick={() => removeBook(i)}>Delete</button>

@@ -9,14 +9,10 @@ function App() {
         <p>{user.id + "."}
           {user.name + "/"}
           {user.email}</p>
-        {user.phone}
+        {user.phone}  
 
       </h2>
-
     )}
-
-
-
   </>
 }
 
