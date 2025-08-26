@@ -1,20 +1,37 @@
 import React from "react";
 import "./About.css";
 
-export default function About() {
+export default function About(props) {
+  const { name, bio, avatar_url, followers, following, company, location } =
+    props.user;
+  const length = props.length;
   return (
     <section className="about-section">
       <div className="detail">
-        <h1>Hii, I'm PATIL TANMAY </h1>
-        <h3>FULL STACK DEVLOPER</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetccusantium commodi architecto veniam quisquam mollitia magni eveniet quod sint reiciendis consequatur facilis excepturi obcaecati, in sunt, quam iure?
-          Consequuntur asperiores voluptatum illobo eum ullam esse, dolore sunt sapiente. Placeat odit dolore eius qui! Debitis dolorem mollitia omnis illum minima assumenda sint ratione.
-          Et exercitationem, quibusdam provide Tempora beatae libero quo. Sint provident quis assumenda qui fuga dolores necessitatibus! Dolorum tenetur excepturi voluptatibus itaque voluptate vel aspernatur!
-        </p>
+        <h1>Hello, I'm {name}</h1>
+        <h3>MERN Stack Developer</h3>
+        <p>{bio}</p>
+        <p>{company}</p>
+        <p>{location}</p>
+        <div className="github-stats">
+          <p className="follower">
+            <span>Follower - </span>
+            <span> {followers}</span>
+          </p>
+          <p className="follower">
+            <span>Following - </span>
+            <span> {following}</span>
+          </p>
+          <p className="follower">
+            <span>Repositories - </span>
+            <span> {length}</span>
+          </p>
+        </div>
         <button className="hire-btn">Hire Me</button>
         <button className="resume-btn">Resume</button>
       </div>
+
+      <img src={avatar_url} alt="" />
     </section>
   );
 }
