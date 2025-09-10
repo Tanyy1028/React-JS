@@ -17,9 +17,8 @@ import './Navbar.css'
 
     <ul className="nav mb-0">
       <li><a href="#" className="nav-link px-2 link-dark">Home</a></li>
-      <li><a href="#" className="nav-link px-2 link-dark">Features</a></li>
       <li><a href="#" className="nav-link px-2 link-dark">Menu</a></li>
-      <li><a href="#" className="nav-link px-2 link-dark">FAQs</a></li>
+      <li><a href="#" className="nav-link px-2 link-dark">Book</a></li>
       <li><a href="#" className="nav-link px-2 link-dark">About</a></li>
     </ul>
 
