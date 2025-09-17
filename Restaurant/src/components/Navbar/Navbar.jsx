@@ -10,7 +10,7 @@ import './Navbar.css'
     
     <a href="/" className="Logo d-flex align-items-center mb-0 text-dark text-decoration-none">
       <svg className="bi me-2" width={40} height={32}>
-        <use xlinkHref="#bootstrap" />
+        <use xlinkHref="#bootstrap" /> 
       </svg>
       <span className="fs-4">PATO Restaurant</span>
     </a>
@@ -18,7 +18,7 @@ import './Navbar.css'
     <ul className="nav mb-0">
       <li><a href="#" className="nav-link px-2 link-dark">Home</a></li>
       <li><a href="#" className="nav-link px-2 link-dark">Menu</a></li>
-      <li><a href="#" className="nav-link px-2 link-dark">Book</a></li>
+      <li><a href="#" className="nav-link px-2 link-dark">Book </a></li>
       <li><a href="#" className="nav-link px-2 link-dark">About</a></li>
     </ul>
 
