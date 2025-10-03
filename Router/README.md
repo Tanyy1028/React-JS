@@ -39,6 +39,10 @@ This React app simulates a mini e-commerce website. Users can:
 
 
 
+https://github.com/user-attachments/assets/4d0e5cf4-6d6f-49b3-928d-5ea986092851
+
+
+
 
 
 
