@@ -4,18 +4,16 @@ import { addtodo } from '../../Slices/TodoSlice'
 
 export default function Todo() {
   const dispatch = useDispatch();
-  const {Todo,message}=useSelector((state)=>state.todo);
+  const {todos,message}=useSelector((state)=>state.todos);
   return (
     <div>
       <div>
         {
-          Todo.map((todo,index)=><p key={index}>{todo}</p>)
+          todos.map((todo,index)=><p key={index}>{todo}</p>)
         }
       </div>
       {message}
-      <button onClick={()=>{
-        dispatch(addtodo("task-1"));
-      }}>add</button>
+      <button onClick={() => dispatch(addtodo("task-1"))}>add</button>
     </div>
   )
 }
