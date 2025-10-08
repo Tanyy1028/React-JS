@@ -1,4 +1,4 @@
-# 🛒 Order Filter 
+# 🛒 Order Filter Panel (React)
 
 A clean and simple **Order Filter Panel** built with React. Easily filter orders by various criteria like customer name, order ID, phone number, product name, payment status, order status, and date. All done with a sleek Bootstrap-based UI. ✨
 
@@ -17,6 +17,21 @@ A clean and simple **Order Filter Panel** built with React. Easily filter orders
 - 📃 Responsive table view for displaying results
 - 🧹 Clear all filters with one click
 - 🎨 Beautiful and responsive UI using Bootstrap
+
+---
+## 📸 Video
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -83,19 +98,7 @@ A clean and simple **Order Filter Panel** built with React. Easily filter orders
 * Integrate with real API or backend.
 * Add pagination or sorting logic for better performance with large data sets.
 
----
-
-## 📸 Video
-
-
-
-
-
-
-
----
-
-
+--
 ## 🙌 Support
 
 If you like this project, don’t forget to ⭐️ the repo!
