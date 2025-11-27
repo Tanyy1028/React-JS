@@ -1,0 +1,118 @@
+/* --- Global Wrapper --- */
+.app-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: #0d1117;
+    font-family: "Inter", sans-serif;
+    color: #e5e7eb;
+    overflow: hidden;
+}
+
+/* --- Sidebar --- */
+.side-panel {
+    width: 340px;
+    backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 0px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.header-info {
+    padding: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.neon-name {
+    color: #14b8a6; 
+    font-weight: 800;
+}
+
+/* Thread List */
+.thread-list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.thread-list-container::-webkit-scrollbar {
+    width: 5px;
+}
+.thread-list-container::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 5px;
+}
+.thread-list-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.thread-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Thread Item */
+.thread-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 22px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: 0.25s;
+}
+
+.thread-item:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-left: 4px solid #14b8a6;
+}
+
+.thread-details {
+    flex-grow: 1;
+}
+
+.thread-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.thread-message {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Unread Badge */
+.unread-badge {
+    background: #14b8a6;
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    border-radius: 14px;
+    font-weight: 600;
+}
+
+/* --- Main Chat Area --- */
+.main-view {
+    flex-grow: 1;
+    background: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}

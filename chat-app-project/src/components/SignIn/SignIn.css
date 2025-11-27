@@ -1,0 +1,115 @@
+/* ---------- Page Background ---------- */
+.auth-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at 50% 20%, #1A1F27, #0B0E13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------- Glass Card ---------- */
+.auth-card {
+  width: 380px;
+  padding: 35px 30px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 0 25px rgba(0, 170, 255, 0.15),
+    0 0 60px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Title ---------- */
+.auth-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #EAF3FF;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 12px rgba(0, 160, 255, 0.4);
+}
+
+/* ---------- Form ---------- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---------- Inputs ---------- */
+.auth-input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #DCEAFF;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.auth-input::placeholder {
+  color: #8594A8;
+}
+
+.auth-input:focus {
+  border-color: #00A8FF;
+  background: rgba(0, 168, 255, 0.08);
+  box-shadow: 0 0 10px rgba(0, 168, 255, 0.4);
+}
+
+/* ---------- Button ---------- */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #0077FF, #00A8FF);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 18px rgba(0, 168, 255, 0.3);
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 168, 255, 0.5);
+}
+
+/* ---------- Navigation Link ---------- */
+.auth-nav-link {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #BFC8D6;
+}
+
+.auth-nav-link a {
+  color: #00A8FF;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-nav-link a:hover {
+  text-decoration: underline;
+}
