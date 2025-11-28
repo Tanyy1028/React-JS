@@ -25,6 +25,10 @@ This app allows users to **sign up, log in, send messages, delete messages, use 
 
 
 
+https://github.com/user-attachments/assets/c98b2ccb-3ca1-4561-b15d-05dc1bfc5894
+
+
+
 
 
 
