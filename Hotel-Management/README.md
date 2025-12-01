@@ -81,9 +81,6 @@ PalmNest-Hotel/
 │   │   ├── reservationSlice.js
 │   │   ├── authSlice.js
 │   │
-│   ├── utils/
-│   │   ├── auth.js
-│   │
 │   ├── pages/
 │   │   ├── Login.jsx
 │   │
