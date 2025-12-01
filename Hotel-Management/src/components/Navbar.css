@@ -1,0 +1,48 @@
+/* NAVBAR MAIN STYLE */
+.navbar {
+  background-color: #1b1b1b !important;
+  padding: 12px 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* BRAND TEXT */
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+.nav-link {
+  color: #e4e4e4 !important;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+/* HOVER EFFECT */
+.nav-link:hover {
+  background-color: #343434;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* ACTIVE LINK */
+.nav-link.active {
+  background-color: #0d6efd;
+  color: white !important;
+  border-radius: 6px;
+}
+
+/* SMALL SCREEN FIX */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-link {
+    margin-top: 8px;
+  }
+}

@@ -3,16 +3,25 @@ import Navbar from "./components/Navbar";
 import RoomList from "./components/RoomList";
 import ReservationForm from "./components/ReservationForm";
 import ReservationList from "./components/ReservationList";
-import LoginPage from "./pages/LoginPage";
 import PrivateRoute from "./components/PrivateRoute";
+import Login from "./pages/Login";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<RoomList />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <RoomList />
+            </PrivateRoute>
+          }
+        />
 
         <Route
           path="/reservations"
@@ -31,11 +40,9 @@ function App() {
             </PrivateRoute>
           }
         />
-
-        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

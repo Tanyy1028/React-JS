@@ -1,0 +1,40 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Deluxe Room",
+      "type": "Deluxe",
+      "price": 3500,
+      "features": ["AC", "TV", "WiFi"],
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Suite Room",
+      "type": "Suite",
+      "price": 5000,
+      "features": ["AC", "TV", "WiFi", "Mini Bar"],
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Standard Room",
+      "type": "Standard",
+      "price": 2000,
+      "features": ["Fan", "WiFi"],
+      "available": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "roomId": 1,
+      "guest": "Rohit Sharma",
+      "checkIn": "2025-01-10",
+      "checkOut": "2025-01-12"
+    }
+  ],
+  "users": [
+    { "id": 1, "email": "admin@gmail.com", "password": "123456", "name": "Admin" }
+  ]
+}

@@ -1,31 +1,53 @@
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../slice/authSlice";
+// src/components/Navbar.jsx
+import { Link, useNavigate } from "react-router-dom";
+import "./Navbar.css";
+import { getAuth, clearAuth } from "../utils/auth";
 
 export default function Navbar() {
-  const { user } = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const user = getAuth();
+
+  const logout = () => {
+    clearAuth();
+    navigate("/login");
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-      <Link className="navbar-brand" to="/">Hotel App</Link>
+    <nav className="navbar navbar-dark bg-dark navbar-expand-lg px-4">
+      <Link className="navbar-brand text-white" to="/">PalmNest Hotel</Link>
 
-      <div className="navbar-nav ms-auto">
-        <Link className="nav-link" to="/">Rooms</Link>
-        <Link className="nav-link" to="/reservations">Reservations</Link>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-        {user ? (
-          <button
-            className="btn btn-danger ms-3"
-            onClick={() => dispatch(logout())}
-          >
-            Logout
-          </button>
-        ) : (
-          <Link className="btn btn-success ms-3" to="/login">
-            Login
-          </Link>
-        )}
+      <div className="collapse navbar-collapse" id="navMenu">
+        <ul className="navbar-nav ms-auto align-items-center">
+          <li className="nav-item mx-2">
+            <Link className="nav-link" to="/">Rooms</Link>
+          </li>
+
+          <li className="nav-item mx-2">
+            <Link className="nav-link" to="/reservations">Reservations</Link>
+          </li>
+
+          <li className="nav-item mx-2">
+            <Link className="nav-link" to="/reserve">Book Room</Link>
+          </li>
+
+          {user ? (
+            <>
+             
+              <li className="nav-item mx-2">
+                <button className="btn btn-sm btn-outline-light" onClick={logout}>Logout</button>
+              </li>
+            </>
+          ) 
+          : (
+            <li className="nav-item mx-2">
+              <Link className="nav-link" to="/login">Login</Link>
+            </li>
+          )}
+        </ul>
       </div>
     </nav>
   );
